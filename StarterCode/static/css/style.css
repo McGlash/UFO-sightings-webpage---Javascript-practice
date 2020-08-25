@@ -10,12 +10,16 @@ body {
   margin: 0;
 }
 
+.container {background: rgba(37, 36, 36, 0.856);
+}
+
 /* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
 .wrapper {
   position: relative;
   min-height: 100%;
   padding-bottom: 130px;
   overflow: auto;
+  background-color: black;
 }
 
 /* The footer is positioned at the bottom of the page */
@@ -35,8 +39,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
-}
+  background: black;}
 
 .navbar {
   padding: 5px;
@@ -69,7 +72,7 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  color: rgb(101, 101, 216);
   outline: none;
 }
 
@@ -94,7 +97,7 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 550px;
+  height: 350px;
   padding: 20px;
   margin: 0;
   background: black;
@@ -120,12 +123,12 @@ select {
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: e9#879f;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8e979f;
+  color: e9#879f;
 }
 
 .form-control:-ms-input-placeholder {
@@ -153,7 +156,7 @@ select {
   #table-area tr td:first-child {
     font-size: 1.8em;
     font-weight: bold;
-    background: #1b3146;
+    background: black;
   }
 
   #table-area tr td:last-child {

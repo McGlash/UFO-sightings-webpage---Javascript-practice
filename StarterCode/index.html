@@ -27,7 +27,7 @@
     </div>
     <div class="container">
       <div class="row margin-top-50">
-        <div class="col-md-2">
+        <div class="col-md-3">
           <aside class="filters">
             <div class="panel panel-default">
               <div class="panel-heading">Filter Search</div>
@@ -37,17 +37,29 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
+                        <input class="form-control" id="datetime" type="text" placeholder="13/1/2010">
+                        <li class="filter list-group-item">
+                          <label for="date">Enter a city</label>
+                          <input class="form-control" id="city" type="text" placeholder="benton">
+                        <li class="filter list-group-item">
+                          <label for="date">Enter a state</label>
+                          <input class="form-control" id="state" type="text" placeholder="ca">
+                        <li class="filter list-group-item">
+                          <label for="date">Enter a country</label>
+                          <input class="form-control" id="country" type="text" placeholder="us">
+                        <li class="filter list-group-item">
+                          <label for="date">Enter a shape</label>
+                          <input class="form-control" id="shape" type="text" placeholder="triangle">
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <button id="filter-btn" type="button" class="btn btn-default filterbutton">Filter Table</button>
+                  <button id="filter-btn" type="button" class="btn btn-default resetbutton">Reset</button>
                 </form>
               </div>
             </div>
           </aside>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead>
