@@ -26,7 +26,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 - - -
 ## Files
   1. [html](StarterCode/index.html)
-  2. [css](StarterCode/static/css/styles.css)
+  2. [css](StarterCode/static/css/style.css)
   3. [Javascript](StarterCode/static/js/app.js)
 
 ### Copyright
