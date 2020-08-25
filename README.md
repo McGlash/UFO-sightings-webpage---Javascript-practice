@@ -6,7 +6,7 @@ WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `
 
 There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
 
-That's why we are hiring you. We need you to write code that will create a table dynamically based this [dataset](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
+That's why we are hiring you. We need you to write code that will create a table dynamically based on this [dataset](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
 
 You can handle this... right? The planet Earth needs to know what we have found!
 
