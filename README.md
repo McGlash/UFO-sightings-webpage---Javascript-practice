@@ -24,6 +24,10 @@ You can handle this... right? The planet Earth needs to know what we have found!
   4. `country`
   5. `shape`
 - - -
+## Files
+  1. [html](StarterCode/index.html)
+  2. [css](StarterCode/static/css/styles.css)
+  3. [Javascript](StarterCode/static/js/app.js)
 
 ### Copyright
 
