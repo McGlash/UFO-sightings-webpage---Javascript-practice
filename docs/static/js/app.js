@@ -35,7 +35,7 @@ var inputShape = d3.select("#shape");
 var filterButton = d3.select(".filterbutton");
 var resetButton = d3.select(".resetbutton");
 
-  //create function that serve as filter action
+  //create function that serves as filter action
 function filter() {
 
         //capture input
@@ -61,7 +61,9 @@ function filter() {
         //create function to evaluate and act on input
 
          //clear table
-         d3.select("tbody").html('');
+        d3.select("tbody").html('');
+
+         d3.event.preventDefault();
 
         //verify whether any input is provided
         if (dateSpecifier.length == 0 && citySpecifier.length == 0 && stateSpecifier.length == 0 && countrySpecifier.length == 0 && shapeSpecifier.length == 0) {
@@ -70,10 +72,10 @@ function filter() {
             return false;
         }
         
-        //other loop through inputs and filter data
+        //otherwise loop through inputs and filter data
         else {
 
-            //date 
+            //date
             if (dateSpecifier.length != 0){
 
                 //verify input matches what is available/alert if not
@@ -99,14 +101,14 @@ function filter() {
 
                 //verify input matches what is available/alert if not
 
-                var test = tableData.filter(item => item[value1] === key1);
+                var test = tableData.filter(item => item[value1]) === key1);
 
                     if (test.length==0) {
                         alert (`${value1} not available`)
                     }
                     else {
                     //filter data based on specified iput
-                    filteredData = filteredData.filter(item => item[value1] === key1);
+                    filteredData = filteredData.filter(item => item[value1].toLowerCase() === key1);
                     }
                 }   
 
