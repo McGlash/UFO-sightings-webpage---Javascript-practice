@@ -18,7 +18,7 @@ function Loop(spec){
 };
 
 // pull in data from data.js
-var tableData = data;
+var tableData = UFO1data;
 
 var filteredData = tableData;
 
@@ -37,7 +37,7 @@ var resetButton = d3.select(".resetbutton");
 function filter() {
 
         //capture input
-        var dateSpecifier = inputDate.property("value");
+        var dateSpecifier = inputDate.property("value").trim();
 
         //create function to evaluate and act on input
 

@@ -20,6 +20,8 @@ function Loop(spec){
 // pull in data from data.js
 var tableData = data;
 
+console.log(tableData)
+
 // insert table rows then insert data
 Loop(tableData);
 
@@ -39,11 +41,11 @@ var resetButton = d3.select(".resetbutton");
 function filter() {
 
         //capture input
-        var dateSpecifier = inputDate.property("value");
-        var citySpecifier = inputCity.property("value");
-        var stateSpecifier = inputState.property("value");
-        var countrySpecifier = inputCountry.property("value");
-        var shapeSpecifier = inputShape.property("value");
+        var dateSpecifier = inputDate.property("value").trim();
+        var citySpecifier = inputCity.property("value").toLowerCase().trim();
+        var stateSpecifier = inputState.property("value").toLowerCase().trim();
+        var countrySpecifier = inputCountry.property("value").toLowerCase().trim();
+        var shapeSpecifier = inputShape.property("value").toLowerCase().trim();
 
         //create array of input variables
 
@@ -101,14 +103,14 @@ function filter() {
 
                 //verify input matches what is available/alert if not
 
-                var test = tableData.filter(item => item[value1]) === key1);
+                var test = tableData.filter(item => item[value1] === key1);
 
                     if (test.length==0) {
                         alert (`${value1} not available`)
                     }
                     else {
                     //filter data based on specified iput
-                    filteredData = filteredData.filter(item => item[value1].toLowerCase() === key1);
+                    filteredData = filteredData.filter(item => item[value1] === key1);
                     }
                 }   
 
