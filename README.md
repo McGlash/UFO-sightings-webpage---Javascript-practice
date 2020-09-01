@@ -1,6 +1,6 @@
-# JavaScript Challenge
+# Filtering tables in html via d3.js
 
-https://mcglash.github.io/javascript-challenge/
+Deployed > https://mcglash.github.io/UFO-sightings-webpage---Javascript-practice/
 
 ## Background
 
